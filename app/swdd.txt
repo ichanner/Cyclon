@@ -1,0 +1,99 @@
+class Group {
+  constructor() {
+    this.groups = [];
+    this.users = [];
+  }
+
+  addGroup(group) {
+    this.groups.push(group);
+  }
+
+  addUser(user) {
+    this.users.push(user);
+  }
+
+  getRadius() {}
+
+  getType() {}
+
+  getMinGroupCount() {}
+}
+
+var groups = [];
+
+const getDistance = (p1, p2) => {};
+
+const updateGroups = (groups_n, prev) => {
+  var close = [];
+
+  for (var group of groups) {
+
+    for (var group_i of groups) {
+      if (groups != groups_i) {
+        const d = getDistance(group_i, group);
+
+        if (group_i.getType() == group.getType() && d <= group.getRadius()) {
+          close.push(group_i);
+        }
+      }
+    }
+  }
+
+  var newGroup = null;
+
+  if (close.length >= group.getMinGroupCount()) {
+   
+    if(group.getType() != 3 && prev.getType()-1 != group.getType()){
+
+      newGroup = new Group(group.getType() + 1);
+
+      newGroup.addGroups(close);
+
+      if (prev) {
+       
+        for (var g of close) {
+        
+          prev.removeGroup(g); 
+        }
+
+        prev.addGroup(newGroup);
+      }
+      else {
+      
+        for (var g of close) {
+        
+          groups.splice(indexOf(g), 1);
+        }
+
+        groups.push(newGroup);
+      }
+    
+    }
+
+  } else {
+   
+    if (prev) {
+    
+      for (var g of close) {
+     
+        prev.addGroups(g);
+
+        prev.removeGroup(group);
+      }
+   
+    } 
+    else {
+    
+      for (var g of close) {
+    
+      }
+    }
+  }
+
+  if (group.getGroups().length != null) {
+  
+    updateGroups(newGroup.getGroups(), newGroup);
+  
+  }
+
+}

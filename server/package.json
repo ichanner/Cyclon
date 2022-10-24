@@ -1,0 +1,72 @@
+{
+
+  "name": "myapp",
+
+  "description": "a really cool app",
+
+  "version": "1.0.0",
+
+  "scripts": {
+
+    "start": "nodemon — exec babel-node --experimental-modules index.js"
+
+  },
+
+  "type": "module",
+
+  "dependencies": {
+
+    "@react-navigation/material-bottom-tabs": "^6.2.1",
+
+    "@socket.io/sticky": "^1.0.1",
+
+    "cluster": "^0.7.7",
+
+    "cors": "^2.8.5",
+
+    "dotenv": "^14.2.0",
+
+    "express": "^4.17.2",
+
+    "express-validator": "^6.14.0",
+
+    "mongoose": "^6.2.2",
+
+    "node-worker-threads-pool": "^1.5.1",
+
+    "nodemon": "^2.0.15",
+
+    "os": "^0.1.2",
+
+    "react-native-paper": "^4.12.1",
+
+    "react-native-vector-icons": "^9.1.0",
+
+    "redis": "^4.0.3",
+
+    "socket.io": "^4.4.1",
+
+    "socket.io-redis": "^6.1.1",
+
+    "typedi": "^0.10.0",
+
+    "uuid": "^8.3.2",
+
+    "uuidv4": "^6.2.12",
+
+    "workerpool": "^6.2.0"
+
+  },
+
+  "devDependencies": {
+
+    "@babel/cli": "^7.16.8",
+
+    "@babel/core": "^7.16.12",
+
+    "@babel/preset-env": "^7.16.11"
+
+  }
+
+}
+

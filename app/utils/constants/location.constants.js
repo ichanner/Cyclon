@@ -1,0 +1,10 @@
+export const LOCATION_TASK_NAME = "background-location-task";
+export const APP_NOT_LOADED = 0;
+export const LOCATION_DENIED = 1;
+export const LOCATION_GRANTED = 2;
+export const LOCATION_SHARING_LARGE = 3;
+export const LOCATION_SHARING_MEDIUM = 4;
+export const LOCATION_SHARING_SMALL = 5;
+export const LOCATION_SHARING_FULL = 6;
+export const RADIUS = 6371e3;
+export const KALMAN = 500;
